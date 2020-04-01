@@ -1,0 +1,8 @@
+安装权限不够可以在后面加上 --unsafe-perm
+npm run serve
+pm2 start npm -- run serve
+
+Mac电脑copy项目到宿主机：scp -P 22 /Users/Shared/Project/Learn_2020/wow-vuetify/wow-vuetify.zip root@129.211.39.173:/ftp-file
+Copy源码压缩包到容器（在宿主机中执行）：docker cp /ftp-file/wow-vuetify.zip wow-web-vue:var/wow-web-vue
+进入容器:docker exec -it wow-web-node bash
+unzip wow-vuetify.zip
